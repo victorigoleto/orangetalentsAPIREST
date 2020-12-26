@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="controller.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+<div class="mx-2">
+Cadastro
+<img src="https://i.ibb.co/RD1tFhF/orange.png">
+<img src="https://i.ibb.co/NK6LX0V/zup.png">
+ <hr>
+
+
+<div ng-app="myApp" ng-controller="myCtrl" class="mb-2">
+<form>
+	Nome: <p><input type="text" size="40" ng-model="nome" placeholder="Digite seu nome completo" required></p>
+	Cpf: <p><input type="text" size="20" ng-model="cpf" placeholder="Utilize apenas números"required></p>
+	Email: <p><input type="text" size="21" ng-model="email" placeholder="example@example.com"required></p>
+	Data: <p><input type="date" ng-model="nascimento"required></p>
+	
+	
+	<button ng-click="salvar()">Cadastrar</button>
+</form>
+</div>
+</div>
+<script src="sweetalert2.all.min.js"></script>
+<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
